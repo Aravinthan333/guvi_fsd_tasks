@@ -1,0 +1,35 @@
+           OBJECTS AND IT'S INTERNAL REPRESENTATION IN JAVASCRIPT
+
+
+     OBJECTS :
+ 
+ --> In JavaScript, objects are fundamental data structures used to store and manipulate data. They are at the core of the language and play a pivotal role in representing data, organizing 
+     code, and enabling various programming paradigms like object-oriented programming (OOP). 
+ 
+ --> an object in JavaScript is a collection of key-value pairs, where the keys are strings (or Symbols), and the values can be of any data type, including other objects. 
+
+ --> Objects in JavaScript can be created using object literals, constructors, or by extending other objects through inheritance.
+
+ --> Objects in JavaScript are incredibly versatile and serve as the building blocks for complex data structures and applications.
+
+
+
+
+     Internal Representation :
+
+ --> Properties Table: Each object has an internal properties table that stores its properties (keys) and their associated values. This table is implemented as a hash table or similar data       
+     structure to allow for efficient property access.
+
+ --> Hidden Classes (V8) or Shapes (SpiderMonkey): JavaScript engines often use hidden classes or shapes to optimize property access. These structures help the engine quickly determine where 
+     to find a property's value in memory.
+
+      --> When you add properties to an object, the engine assigns it a hidden class or shape.
+      --> If you add properties to another object with the same hidden class/shape, it can optimize access because the layout is the same.
+      --> Changing an object's structure by adding or deleting properties can lead to hidden class changes, which can impact performance.
+
+ --> Dynamism: JavaScript objects are highly dynamic, which means you can add or remove properties at runtime. However, this dynamism can lead to performance implications because it can 
+     force the engine to change hidden classes or shapes.
+
+ --> Prototypes: Objects can have a prototype, which is another object that the current object inherits properties from. This forms a prototype chain. When you access a property on an 
+     object, the engine first checks if the object itself has the property. If not, it looks up the prototype chain until it finds the property or reaches the end (the root object, typically 
+     Object.prototype).

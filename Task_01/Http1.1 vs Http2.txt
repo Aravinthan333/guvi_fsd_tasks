@@ -1,0 +1,32 @@
+Blog on HTTP 1.1  Vs  HTTP 2
+
+
+HTTP 1.1
+ => HTTP 1.1 uses text-based commands to complete requests, which are readable to system admins.
+ => In HTTP 1.0, the client had to break and remake the TCP connection with every new request, a costly affair in terms of both time and resources.
+ => HTTP 1.1 assumes that a TCP connection should be kept open unless directly told to close. This allows the client to send multiple requests along the same connection without waiting for 
+    a response to each.
+ => In HTTP 1.1, flow control relies on the underlying TCP connection. When this connection initiates, both client and server establish their buffer sizes using their system default 
+    settings.
+ => In HTTP 1.1, if the developer knows in advance which additional resources the client machine will need to render the page, they can use a technique called resource inlining to include 
+    the required resource directly within the HTML document that the server sends in response to the initial GET request.
+ => HTTP 1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+ => The Upgrade header was used to indicate a preference from the client that made it possible to switch to a more preferred protocol if found appropriate by the server.
+ => HTTP 1.1 provided support for chunk transfers that allowed streaming of content dynamically as chunks and for additional headers to be sent after the message body. 
+ => It is relatively secure since it uses digest authentication, NTLM authentication.
+
+
+
+
+HTTP 2
+ => HTTP 2 uses binary commands (1s and 0s) to complete requests, which requires conversion back from binary to read the request.
+ => HTTP 2 uses the binary framing layer to encapsulate all messages in binary format, while still maintaining HTTP semantics, such as verbs, methods, and headers.
+ => The binary framing layer divides the message into frames that are segregated based on their type – Data or Header. This feature greatly increases efficiency in terms of security, 
+    compression and multiplexing.
+ => HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time by a greater margin along with being less sensitive to network delays.
+ => HTTP 2 establishes a single connection object between the two machines. Within this connection there are multiple streams of data.
+ => HTTP 2 allows the client and server to implement their own flow controls, rather than relying on the transport layer.
+ => Http 2 ensures that the client can decide to cache or decline the pushed resource separate from the main HTML document, fixing the major drawback of resource inlining.
+ => When a client sends concurrent requests to a server, it can prioritize the responses it is requesting by assigning a weight between 1 and 256 to each stream. The higher number indicates  
+    higher priority.
+ => HTTP 2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 

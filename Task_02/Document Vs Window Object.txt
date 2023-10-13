@@ -1,0 +1,78 @@
+Window
+
+ --> The window object is a global object in JavaScript that represents the browser window or tab. It acts as the top-level container for all the content within a browser window, including     the web page's document. 
+
+ --> Variables and functions declared in the global scope are attached to the window object.
+
+ --> Global events, such as resizing the window or navigating away from the page, are tied to the window object. You can add event listeners to the window object to respond to these      events.
+
+ --> The window object is responsible for managing the entire browsing context, which includes the current tab or window. It provides access to various properties and methods related to      the window itself, like 'window.location', 'window.history', and 'window.navigator'.
+
+ --> The window object also manages frames and iframes within a web page. Each frame or iframe has its own window object, making it possible to interact with and manipulate the content      within these frames separately.
+
+ --> The window object provides methods and properties that relate to the browser window itself, such as 'window.innerWidth', which gives you the width of the browser window in pixels, or     'window.alert()', which displays a pop-up alert dialog.
+
+ --> Window object is used to create timers and handle asynchronous tasks. Functions like setTimeout and setInterval are properties of the window object.
+
+ --> Event listeners and event-related methods, such as 'addEventListener', are attached to the window object to manage events that occur in the browser.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Docunent
+
+ --> The document object represents the actual web page content that is loaded within the browser window. It is a property of the window object and provides access to the HTML structure      and elements of the page.
+
+ --> The document object allows you to access and manipulate HTML elements on the page. You can select elements by their IDs, classes, tags, or other attributes using methods like 
+'document.getElementById()', 'document.querySelector()', and more.
+
+ --> The document object is used to create, modify, or delete HTML elements and their attributes. This enables you to dynamically update the content and structure of your web page.
+
+ --> Event listeners, which responds to user interactions are attached to the document object, such as clicks, keyboard input, and form submissions. Event handling is a crucial part of      building interactive web applications.
+
+ --> The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed by the browser. This event is often used to trigger JavaScript code that      should run when the page is ready but before all external resources (like images) have finished loading.
+
+ --> Used to create new elements and add them to the page using methods like 'createElement' and 'appendChild'.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ Difference Between Windows and Document object
+
+Scope and Context:
+ --> The window object represents the global scope and browsing context, while the document object represents the current web page's content.
+
+Functionality:
+ --> window provides functionality for managing the entire browser window, including timers and event handling, while document is primarily concerned with manipulating the DOM.
+
+Hierarchy:
+ --> Document is a property of the window object, which means you access it as window.document. In contrast, window is the top-level object.
+
+Interactivity:
+ --> The document object is used for creating, manipulating, and interacting with elements on the web page, whereas the window object is more about controlling the broader browser environment.
+
+Relationship:
+ --> Document is a property of the window object. It is a part of the window object hierarchy specifically dedicated to dealing with the web page's content. This relationship makes it possible to access the document object from the window object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

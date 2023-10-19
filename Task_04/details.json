@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Aravinthan",
+    "lastName": "B",
+    "qualification": { "10th": 96.4, "12th": 71.8, "BE": 8.1 },
+    "locality": "Sivakasi",
+    "contactDetails": {
+      "mobileNumber": "9360638952",
+      "mailID": "aravinthan2606@gmail.com",
+      "toKnowMe": {
+        "linkeedIn": "www.linkedin.com/in/aravinthanbalaji",
+        "gitHub": "https://github.com/Aravinthan333"
+      }
+    },
+    "languagesKnown": {
+      "toCode": ["HTML", "CSS", "JS", "Dart", "Flutter"],
+      "toSpeak": {
+        "Tamil": ["S", "R", "W"],
+        "English": ["S", "R", "W"],
+        "Telugu": ["S"]
+      }
+    },
+    "knownSoftware": ["MS Excel", "Rapid Harness", "VS Code"],
+    "softSkills": ["Leadership", "Management", "Problem Solving", "Team Work"],
+    "experience": {
+      "eMemberInTSR": "2019-2023",
+      "vcInTSR": "2020-2022",
+      "managerInTSR": "2021-2023",
+      "volunteerInFKDC": "2019"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+body {
+  height: 100%;
+  width: 100vh;
+
+  display: flex;
+  padding: 5% 25%;
+  gap: 15%;
+}
+
+table,
+th,
+td,
+tr {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.four {
+  display: inline-block;
+  margin: 5px 0px;
+}
+#male,
+#female {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+}

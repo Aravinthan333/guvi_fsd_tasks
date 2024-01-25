@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background: #f8f9fa;
+  max-width: 100%;
+  min-height: 10vh;
+}
+
+.menu {
+  padding-left: 0px;
+  max-width: 300px;
+  display: flex;
+  gap: 18px;
+}
+
+.cart {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+  background: #212529;
+  align-items: center;
+  justify-content: center;
+}
+.cart > p {
+  letter-spacing: 1.5px;
+}
+
+.slides {
+  background: #212529;
+  color: #fff;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides > span > h1 {
+  font-size: 47px;
+}
+
+.slides > span > p {
+  letter-spacing: 1px;
+}
+
+.shopArea {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 40px;
+  text-align: center;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.sale {
+  float: right;
+  border: ipx solid black;
+  background: black;
+  color: #fff;
+  font-size: 14px;
+  margin: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.image {
+  height: 200px;
+  width: 250px;
+  font-size: 25px;
+  background: #dee1e6;
+}
+
+.image > p {
+  /* background-color: aqua; */
+  text-align: center;
+  padding-top: 38%;
+  font-weight: lighter;
+}
+
+.product {
+  margin: 25px 0 5px 0;
+}
+
+.card > i {
+  margin: 5px 0;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.card > button {
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5em;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.footer {
+  background: #212529;
+  color: #fff;
+  width: 100%;
+  height: 20vh;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

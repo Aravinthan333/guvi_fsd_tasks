@@ -1,0 +1,61 @@
+/* .card {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 40px;
+  text-align: center;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+.sale {
+  float: right;
+  border: ipx solid black;
+  background: black;
+  color: #fff;
+  font-size: 14px;
+  margin: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.image {
+  height: 200px;
+  width: 250px;
+  font-size: 25px;
+  background: #dee1e6;
+}
+
+.image > p {
+   background-color: aqua;
+  text-align: center;
+  padding-top: 38%;
+  font-weight: lighter;
+}
+
+.product {
+  margin: 25px 0 5px 0;
+}
+
+.card > i {
+  margin: 5px 0;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.card > button {
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5em;
+} */
